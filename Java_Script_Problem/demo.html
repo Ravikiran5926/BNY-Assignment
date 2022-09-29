@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>JavaScript</title>
+    <style>
+    h1 {
+        color:crimson;
+    }
+      
+    h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+      
+    body {
+        text-align: center;
+    }
+    </style>
+
+</head>
+
+<body>
+<h1>JavaScriptCode</h1>
+    <h2>
+        JavaScript: Program to 
+        get the website URL ?
+    </h2>
+    <p>
+        <b>
+            Click on Below Button 
+            To Get Current URL
+        </b>
+    </p>
+  
+
+    <input type="submit" value="Get URL" id="btn">
+
+
+
+    <script>
+
+        var btn = document.getElementById('btn')
+
+        btn.addEventListener('click', (e)=> alert('The url of this page is: ' + window.location.href))
+
+    </script>
+
+</body>
+
+</html>

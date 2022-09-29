@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Write a JavaScript program to compute the absolute difference between a specified number and 19. Returns triple their absolute difference if the specified number is greater than 19.</h1>
+<p id="demo1"></p>
+<p id="demo3"></p>
+<script>
+var num=22;
+document.getElementById("demo1").innerHTML =
+	"Number=: " + num;
+function diff_num(n) {
+  if (n <= 19) {
+    return (19 - n);
+    }
+  else
+    {
+     return (n - 19) * 3;
+    }
+}
+document.getElementById("demo3").innerHTML = diff_num(22);
+</script>
+</body>
+</html>

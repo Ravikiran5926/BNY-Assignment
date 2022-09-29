@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="color: crimson;">JavaScript User-Defined Variables Using var Keyword</h1>
+
+<p>In this example we are using x, y, and z as a user-defined variables declaire with var keyword.</p>
+<p>Ex. var x=10</p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo"></p>
+
+<script>
+var x = 10;
+var y = 6;
+var z = x + y;
+document.getElementById("demo1").innerHTML =
+	"The value of x is: " + x;
+document.getElementById("demo2").innerHTML =
+	"The value of y is: " + y;
+document.getElementById("demo").innerHTML =
+"The value of z is: " + z;
+</script>
+
+<h1 style="color: cyan;">JavaScript User-Defined Variables Using let Keyword</h1>
+<p>In this example we are using x, y, and z as a user-defined variables declaire with var keyword.</p>
+<p>Ex. let a=6</p>
+<p id="demo3"></p>
+
+<script>
+let a = 6;
+let b = 15;
+let sum = x + y;
+document.getElementById("demo3").innerHTML =
+"The value of  is: " + sum;
+</script>
+
+<h1 style="color: darkmagenta;">JavaScript Undeclared Variables</h1>
+<p>In this example we are using x, y, and z as a undeclared variables</p>
+<p>Ex.  l=6</p>
+<p id="demo4"></p>
+
+<script>
+l = 6;
+ m = 22;
+ add = x + y;
+document.getElementById("demo4").innerHTML =
+"The value of  is: " + add;
+</script>
+</body>
+</html>

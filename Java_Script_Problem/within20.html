@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>Write a JavaScript program to check a given integer is within 20 of 100 or 400.  </h2>
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+
+var num=70;
+function testhundred(x) {
+	  return ((Math.abs(100 - x) <= 20) ||
+		 (Math.abs(400 - x) <= 20));
+	}
+document.getElementById("demo").innerHTML =
+	"The given number is: " + num;
+document.getElementById("demo1").innerHTML = testhundred(80);
+</script>
+</body>
+</html>

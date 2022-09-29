@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the Document</title>
+  </head>
+  <body style="background-color:LightGray;">
+    <h2 style="color:red;" >Select a file and click on the button to check the file extension.</h2>
+    <div>
+      <input type="file" id="chooseFile" />
+      <input  type="button" value="Check Extension" onclick="checkFileExtension();" />
+    </div>
+    <h3>
+      The file extension is a: 
+      <p class="output"></p>
+    </h3>
+    <script>
+      function checkFileExtension() {
+        fileName = document.querySelector('#chooseFile').value;
+        extension = fileName.split('.').pop();
+        document.querySelector('.output').textContent = extension;
+      };
+    </script>
+  </body>
+</html>

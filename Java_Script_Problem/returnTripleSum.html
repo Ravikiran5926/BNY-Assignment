@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>Write a JavaScript program to compute the sum of the two given integers. If the two values are same, then returns triple their sum.  </h2>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+var num1=20;
+var num2=20;
+document.getElementById("demo1").innerHTML =
+	"Num1=: " + num1;
+document.getElementById("demo2").innerHTML =
+	"Num2=: " + num2;
+function sumTriple (x, y) {
+	  if (x == y) {
+	    return 3 * (x + y);
+	    } 
+	   else
+	   {
+	    return (x + y);
+	   }
+	 }
+document.getElementById("demo3").innerHTML = sumTriple(20,20);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Write a JavaScript program to get the difference between a given number and 13, if the number is greater than 13 return double the absolute difference.</h1>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+var num=11;
+document.getElementById("demo1").innerHTML =
+	"Number=: " + num;
+function difference(n)
+ {
+    if (n <= 13)
+        return 13 - n;
+    else
+        return (n - 13) * 2;
+ }
+document.getElementById("demo2").innerHTML = difference(11);
+</script>
+</body>
+</html>
